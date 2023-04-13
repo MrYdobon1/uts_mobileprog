@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primaryColor: Colors.blue,
+        primaryColor: Color.fromRGBO(103, 80, 164, 100),
       ),
       onGenerateRoute: route.controller,
       initialRoute: route.loginPage,
