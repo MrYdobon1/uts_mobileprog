@@ -3,6 +3,7 @@ import 'package:ionicons/ionicons.dart';
 
 import 'package:uts_mobileprog/route/route.dart' as route;
 
+
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -10,36 +11,51 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Home Page'),
       ),
+      
       body: GridView(
   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
     crossAxisCount: 3,
   ),
-  children: [
-    Icon(
-      Icons.event_note,
-      color: Color.fromRGBO(103, 80, 164, 100),
-      size: 50.0, 
-    ),
-    Icon(
-      Icons.print,
-      color: Color.fromRGBO(103, 80, 164, 100),
-      size: 50.0, 
-    ),
-    Icon(
-      Icons.paid,
-      color: Color.fromRGBO(103, 80, 164, 100),
-      size: 50.0, 
-    ),
-    Icon(
-      Icons.schedule,
-      color: Color.fromRGBO(103, 80, 164, 100),
-      size: 50.0, 
-    ),
-    Icon(
-      Icons.edit,
-      color: Color.fromRGBO(103, 80, 164, 100),
-      size: 50.0, 
-    ),
+  children: <Widget> [
+     IconButton(
+          icon: const Icon(Icons.calendar_month, color: Color.fromRGBO(103, 80, 164, 100),
+      size: 80.0),
+          tooltip: 'Schedule', 
+          onPressed: () => Navigator.pushNamed(context, route.schedulePage),
+        ),
+      IconButton(
+          icon: const Icon(Icons.print, color: Color.fromRGBO(103, 80, 164, 100),
+      size: 80.0),
+          tooltip: 'Grades', 
+          onPressed: () {
+  
+          },
+        ),
+      IconButton(
+          icon: const Icon(Icons.paid, color: Color.fromRGBO(103, 80, 164, 100),
+      size: 80.0),
+          tooltip: 'Fees', 
+          onPressed: () {
+  
+          },
+        ),
+      IconButton(
+          icon: const Icon(Icons.schedule, color: Color.fromRGBO(103, 80, 164, 100),
+      size: 80.0),
+          tooltip: 'Attendances', 
+          onPressed: () {
+  
+          },
+        ),
+      IconButton(
+          icon: const Icon(Icons.edit, color: Color.fromRGBO(103, 80, 164, 100),
+      size: 80.0),
+          tooltip: 'Questionnaire', 
+          onPressed: () {
+  
+          },
+        ),
+    
   ],
 ), bottomNavigationBar: BottomNavigationBar(
     items: const <BottomNavigationBarItem>[

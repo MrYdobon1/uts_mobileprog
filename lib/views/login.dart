@@ -49,7 +49,6 @@ class LoginPage extends StatelessWidget {
             ),
           ),
         ),
-        
        SizedBox( 
               height:50, //height of button
               width:500, //width of button

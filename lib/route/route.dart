@@ -4,12 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:uts_mobileprog/views/home.dart';
 import 'package:uts_mobileprog/views/settings.dart';
 import 'package:uts_mobileprog/views/login.dart';
+import 'package:uts_mobileprog/views/schedule.dart';
 
 // Route Names
 const String loginPage    = 'login';
 const String homePage     = 'home';
 const String settingsPage = 'settings';
-const String utsPage = 'uts';
+const String schedulePage = 'schedule';
 
 // Control our page route flow
 Route<dynamic> controller(RouteSettings settings) {
@@ -21,6 +22,8 @@ Route<dynamic> controller(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => HomePage());
     case settingsPage:
       return MaterialPageRoute(builder: (context) => SettingsPage());
+     case schedulePage:
+      return MaterialPageRoute(builder: (context) => SchedulePage());
 
     default:
       throw('This route name does not exit');
