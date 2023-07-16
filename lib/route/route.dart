@@ -19,7 +19,7 @@ Route<dynamic> controller(RouteSettings settings) {
     case loginPage:
       return MaterialPageRoute(builder: (context) => LoginPage());
     case homePage:
-      return MaterialPageRoute(builder: (context) => HomePage());
+      return MaterialPageRoute(builder: (context) => HomePages());
     case settingsPage:
       return MaterialPageRoute(builder: (context) => SettingsPage());
      case schedulePage:

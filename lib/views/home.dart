@@ -4,7 +4,7 @@ import 'package:ionicons/ionicons.dart';
 import 'package:uts_mobileprog/route/route.dart' as route;
 
 
-class HomePage extends StatelessWidget {
+class HomePages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
